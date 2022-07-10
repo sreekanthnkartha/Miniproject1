@@ -273,6 +273,7 @@ class _SecondState extends State<Second> {
                             .then((value) => print("User Added"))
                             .catchError(
                                 (error) => print("Failed to add user: $error"));
+                        Navigator.pop(context);
                       },
                     ),
                   ],
